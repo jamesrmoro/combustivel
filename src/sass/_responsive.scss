@@ -1,0 +1,379 @@
+@media screen and (max-width: 1270px) {
+
+	#combustivel {
+
+		.situacao {
+
+			width: 30%;
+
+			ul {
+
+				li {
+
+				    font-size: 0.7em;
+				}
+			}
+		}
+
+		.deseja {
+
+			width: 400px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+	#combustivel {
+
+		.completar {
+
+		    width: 100%;
+		    float: right;
+		    left: 0;
+		    position: inherit;
+		}
+
+		.deseja {
+
+			.line2 {
+
+				.mensagem-1 {
+
+				    right: 0;
+				    width: 165px;
+				    left: inherit;
+				    cursor: pointer;
+				}
+			}
+		}
+
+		.cc-selector {
+
+			fieldset:nth-of-type(1), fieldset:nth-of-type(2) {
+
+				margin-bottom: 20px;
+			}
+		}
+
+		.screen-1 {
+
+			input[type="number"] {
+
+			    width: 35%;
+
+			}
+		}
+
+		.fieldset-fuel {
+
+			label {
+
+			    width: 65%;
+			}
+		}
+
+		.wrapper {
+
+			width: 100%;
+		}
+
+		.completar {
+
+			ul {
+
+				li {
+
+					display: inline-block;
+				}
+			}
+		}
+
+		.hide-desktop {
+
+			display: inline-block;
+		}
+
+		.wrapper-deseja {
+
+			overflow: visible;
+		}
+
+		.screen-1, .screen-2, .screen-3 {
+
+			padding: 20px;
+		}
+
+		.abastecer-mobile {
+
+	        background-color: #f8cf26;
+	        color: #1f1f1f;
+	        display: inline-block;
+	        padding: 15px;
+	        font-size: 1.6em;
+	        cursor: pointer;
+	        padding-left: 40px;
+	        font-weight: bold;
+	        text-transform: uppercase;
+	        margin: 0 auto;
+	        right: 0;
+	        left: 0;
+	        position: absolute;
+	        bottom: 225px;
+	        text-align: center;
+
+	        &.disabled {
+
+	            background-color: #ccc;
+	            pointer-events: none;
+	        }
+
+	        &:before {
+
+	            width: 64px;
+	            height: 64px;
+	            position: absolute;
+	            left: 6px;
+	            top: -4px;
+	            content: "";
+	            background: url(../../src/images/botao.png) no-repeat;
+	        }
+	    }
+
+		.screen-4 {
+
+			padding: 20px;
+		}
+
+		.abastecer {
+
+			width: 100%;
+			position: relative;
+			bottom: 0;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.porcentagem {
+
+			position: inherit;
+
+			li {
+
+
+				&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {
+
+					height: 100%;
+					line-height: 19px;
+					padding: 10px;
+					position: relative;
+					left: -385px;
+
+				    i, em {
+
+				    	font-style: normal;
+				    }
+				}
+
+				&.animate-1 {
+
+					left: 0px;
+					animation-delay: 1s;
+    				-webkit-animation-delay: 1s;
+					-webkit-transition: left 2s;
+					-moz-transition: left 2s;
+					-o-transition: left 2s;
+					transition: left 2s;
+				}
+
+				&.animate-2 {
+
+					left: 0px;
+					animation-delay: 2s;
+    				-webkit-animation-delay: 2s;
+					-webkit-transition: left 2.5s;
+					-moz-transition: left 2.5s;
+					-o-transition: left 2.5s;
+					transition: left 2.5s;
+				}
+
+				&.animate-3 {
+
+					left: 0px;
+					animation-delay: 3s;
+    				-webkit-animation-delay: 3s;
+					-webkit-transition: left 3s;
+					-moz-transition: left 3s;
+					-o-transition: left 3s;
+					transition: left 3s;
+				}
+
+				&.animate-4 {
+
+					left: 0px;
+					animation-delay: 4s;
+    				-webkit-animation-delay: 4s;
+					-webkit-transition: left 3.5s;
+					-moz-transition: left 3.5s;
+					-o-transition: left 3.5s;
+					transition: left 3.5s;
+				}
+
+				&.animate-5 {
+
+					left: 0px;
+					animation-delay: 5s;
+    				-webkit-animation-delay: 5s;
+					-webkit-transition: left 4s;
+					-moz-transition: left 4s;
+					-o-transition: left 4s;
+					transition: left 4s;
+				}
+			}
+
+		}
+
+		.situacao {
+
+			width: 100%;
+			position: relative;
+			padding-left: 20px;
+
+			&:before {
+
+				display: none;
+			}
+		}
+
+		.valor-pago {
+
+			display: none;
+		}
+
+		.bomba {
+
+			display: none;
+			overflow: hidden;
+
+			&.show {
+
+				display: block;
+			}
+
+			&.hide {
+
+				display: none;
+			}
+
+			&:after {
+
+				display: none;
+			}
+
+
+			width: 100%;
+			height: 100%;
+
+			&:before {
+
+				display: none;
+			}
+		}
+
+		.button-mobile {
+
+			width: 100%;
+			display: inline-block;
+		}
+
+		.deseja {
+
+		    width: 55%;
+		    position: absolute;
+		    top: -200px;
+		    height: 100%;
+		    z-index: 2;
+		    padding: 0px;
+		    right: 0;
+		    left: 0;
+		    margin: 0 auto;
+
+		    &.hide {
+
+		    	display: none;
+		    }
+
+		    .abastecer-mobile {
+
+		    	position: relative;
+		    	bottom: 0;
+
+		    	&.disabled, &.disabled2 {
+
+		            background-color: #ccc;
+		            pointer-events: none;
+		        }
+		    }
+
+		    .middle {
+
+			    width: 100%;
+			    float: left;
+			    margin-bottom: 15px;
+
+			    input[type="number"] {
+
+			    	width: 100%;
+			    }
+			}
+		}
+
+		.valor-pago {
+
+			&.animate {
+
+				li {
+
+					right: 0
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.github {
+
+		display: none;
+	}
+
+	#combustivel {
+
+		.bomba {
+
+			.tipo {
+
+				margin: 0;
+				margin-bottom: 15px;
+				width: 100%;
+				text-align: center;
+
+				.wrapper-tipo {
+					
+					padding: 0;
+
+				}
+			}
+		}
+
+		.deseja {
+
+			width: 100%;
+			position: inherit;
+		}
+	}
+
+}

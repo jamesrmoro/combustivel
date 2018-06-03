@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+	function limpa_campo(t){
+	
+		var valor_combustivel = Number($(".wrapper-tipo em").html());
+		r = $(".situacao .valor-tanque i").html()*valor_combustivel.toFixed(2);
+		$('.line2 input[type="number"]').val(r);
+		$(t).removeClass("show");
+		$(".abastecer").removeClass("disabled2");
+		$(".abastecer-mobile").removeClass("disabled2");
+	
+	}
+
 	if($(window).width() < 1024) {
 
 		function get_value() {
@@ -54,6 +65,11 @@ $(document).ready(function(){
 			get_value();
 		});
 
+		$("body").on("click", ".mensagem-1", function() {
+			limpa_campo(this);
+			get_value();
+		});
+
 	}
 
 	function reset(t) {
@@ -83,6 +99,10 @@ $(document).ready(function(){
 
 	$('.button-next').each(function(){
 		$('.button-next').addClass("disabled");
+	});
+
+	$("body").on("click", ".mensagem-1", function() {
+		limpa_campo(this);
 	});
 
 	$('input[type="number"]').keyup(function() {
@@ -118,15 +138,10 @@ $(document).ready(function(){
 
 	var tanque = $("#tanque").val();
 
-	$("body").on("click", ".mensagem-1", function() {
-		var valor_combustivel = Number($(".wrapper-tipo em").html());
-		r = $(".situacao .valor-tanque i").html()*valor_combustivel.toFixed(2);
-		$('.line2 input[type="number"]').val(r);
-		$(this).removeClass("show");
-		$(".abastecer").removeClass("disabled2");
-		$(".abastecer-mobile").removeClass("disabled2");
-		get_value();
-	});
+
+
+
+
 
 	$("body").on("click", ".sim", function() {
 		var valor_combustivel = Number($(".wrapper-tipo em").html());

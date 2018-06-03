@@ -916,6 +916,33 @@ body {
         display: inline-block;
         position: relative;
 
+        .abastecer {
+
+            &.disabled {
+
+                &:after {
+
+                    content: "Insira os valores nos campos";
+                    position: absolute;
+                    left: -110px;
+                    top: 7px;
+                    font-size: 0.5em;
+                    background: #F44336;
+                    text-transform: none;
+                    line-height: 16px;
+                    width: 95px;
+                    padding: 7px;
+                    margin: 0;
+                    height: auto;
+                    font-weight: normal;
+                    color: #fff;
+                    text-align: right;
+                    opacity: 1;
+
+                }
+            }
+        }
+
         &:before {
 
             width: 110%;
